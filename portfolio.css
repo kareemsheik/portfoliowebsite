@@ -1,0 +1,141 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+#a{
+    justify-content: space-between;
+  display: flex;
+}
+#logo{
+    color: white;
+    font: bold;    
+    text-decoration: none;
+    font-size: large;
+    padding: 20px;
+  
+}
+
+#p{
+    display: inline-block;
+    margin: 5px 20px;
+}
+a{
+text-decoration: none;
+color: white;
+
+}
+
+header{
+    background-color: rgb(22, 22, 22);
+    box-shadow: 0px 2px 2px rgba(87, 247, 13, 0.808);
+    border-radius: 5px;
+   margin: 0px 5px;
+ 
+  
+}
+body{
+ background-image: url(dark.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+background-attachment: fixed;
+ 
+}
+.div{
+    background-image: url(images.jpeg);
+    background-size: cover;
+   
+    position: -webkit-sticky;
+    padding: 5px;
+    top: 0;
+    position: sticky;
+}
+
+
+.ic{
+    margin: 15px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    display: inline;
+}
+.icon{
+   
+   width: 10px;
+   height: 10px;
+
+ 
+}
+.pic{
+    display: flex;
+    justify-content: space-between;
+}
+.pic .txt{
+    margin: 15% 0% 0% 15%;
+
+}
+.pic .img{
+    margin: 7% 10%;
+
+}
+#imgs{
+    height: 400px;
+    width: 400px;
+}
+@media screen and (max-width:600px){
+
+    .div{
+        background-image: url(images.jpeg);
+        background-size: cover;
+        grid-template-columns: repeat(2, 1fr);
+        position: -webkit-sticky;
+        padding: 5px;
+        top: 0;
+        position: sticky;
+    }
+    .ic{
+        margin: 15px 10px 0 0;
+    
+    }
+    .pic{
+     display: flex;
+     width: fit-content;
+     flex-direction: column;
+     justify-content: none;
+    }
+    .pic .txt{
+        margin: 15% 10% 0% 15%;
+    
+    }
+   #imgs{
+    height: 250px;
+    width: 250px;
+   }
+   
+    
+}
+@media screen and (max-width:900px){
+    #imgs{
+        height: 300px;
+        width: 300px;
+    }
+    .pic .txt{
+        margin: 15% 0% 0% 10%;
+    
+    }
+}
+#p:hover{
+    border-color: #3bdb0a;
+    
+    transform: scale(1.1);
+    text-decoration: underline 2px solid #3bdb0a;
+   
+    
+};
+
+input::-webkit-input-placeholder { /* For Chrome and Safari */
+    width: fit-content;
+  }
+
